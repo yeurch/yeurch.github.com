@@ -9,13 +9,49 @@ published: true
 <meta name="description" content="Blog of software developer Richard Fawcett">
 <link href="atom.xml" rel="alternate" type="application/atom+xml">
 <style>
-body{width:920px;margin:auto;font-family:verdana}a{color:#047}a:hover{color:#c51}
+body{width:920px;margin:auto;font-family:verdana}a{color:#3c8060}a:hover{color:#c51}
 p{float:right}ul{list-style:none;padding:0}a,li{padding:15px}
+div.fr{float:right}div.fl{float:left}#sidebar{width:350px}
+h2{font-size: 1.2em;margin:0}
+.tweet,.query {color: #085258;}
+.tweet_list {font-size:0.9em;-webkit-border-radius: 0.5em;-moz-border-radius: 0.5em;border-radius: 0.5em;list-style: none;overflow-y: hidden;background-color: #eaeaea;margin:5px 0;}
+.tweet_list li {overflow-y: auto;overflow-x: hidden;padding: 0.5em;list-style-type: none;}
+.tweet_list li a {padding: 0}
+.tweet_list .tweet_even {background-color: #f4f4f4;}
+.tweet_list .tweet_avatar {padding-right: .5em; float: left;}
+.tweet_list .tweet_avatar img {vertical-align: middle;}
+.clearfix:before,.clearfix:after {content: " ";display: table;}
+.clearfix:after {clear: both;}
+.clearfix {*zoom: 1;}
 </style>
 </head>
 <body>
 <p><a href=mailto:richard@richardfawcett.net>email</a><a href=atom.xml>rss</a></p>
 <h1>Welcome.</h1>
+<div class="fr" id="sidebar">
+  <div class="clearfix">
+    <div class="fr"><h2>Latest Tweets</h2></div>
+    <div class="fl"><a href="http://twitter.com/yeurch" class="twitter-follow-button" data-show-count="false">Follow @yeurch</a></div>
+  </div>
+  <div id="tweets"></div>
+  <div class="fr" style="font-size:0.9em;"><a href="http://twitter.com/yeurch" target="_blank" title="See all my tweets on Twitter">More &gt;</a></div>
+</div>
+<div class="fl" id="postlist">
 <ul>{% for post in site.posts %}<li>{{ post.date | date_to_string }}<a href={{ post.url | replace_first: '/', ''}}>{{ post.title | escape}}</a>{% endfor %}</ul>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+<script src="assets/jquery.tweet.js"></script>
+<script>
+  $(function(){
+    $('#tweets').tweet({
+          username: "yeurch",
+          avatar_size: 32,
+          count: 6,
+          filter: function(t){ return ! /^@\w+/.test(t.tweet_raw_text); }, // exclude @replies
+          loading_text: "loading tweets..."
+    });
+  });
+</script>
 </body>
 </html>
