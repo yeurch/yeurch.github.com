@@ -21,17 +21,21 @@
     <div id="a">{{ content }}</div>
     <div id="comments" class="section">
       <div id="disqus_thread"></div>
-      <a href="http://disqus.com" class="dsq-brlink attribution">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+      <script type="text/javascript">
+        var disqus_shortname = 'richardfawcett';
+        var disqus_title = '{{ page.title }}';
+        var disqus_url = '{{ page.url }}';
+        var disqus_identifier = {% if page.disqus_id %}{{ page.disqus_id }};{% else %}'{{ page.url }}';{% endif %}
+
+        (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      <a href="http://disqus.com" class="dsq-brlink attribution">comments powered by <span class="logo-disqus">Disqus</span></a>
     </div>
-    <script type="text/javascript">
-      //{% if page.disqus_id %}var disqus_identifier = {{ page.disqus_id }};{% else %}var disqus_identifier = '{{ page.url }}';{% endif %}
-      //(function() {
-      // var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      // dsq.src = 'http://yeurch.disqus.com/embed.js';
-      // (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      //})();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=yeurch">comments powered by Disqus.</a></noscript>
 
     <div id="license">
         <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/88x31.png" /></a><br />This <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" rel="dct:type">work</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.richardfawcett.net" property="cc:attributionName" rel="cc:attributionURL">Richard Fawcett</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US">Creative Commons Attribution-NonCommercial 3.0 Unported License</a>.
