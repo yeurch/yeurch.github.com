@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <head lang="en-gb">
-	<meta charset="utf-8">
-	<title>{{ page.title }}</title>
-	<meta name="description" content="Blog of software developer Richard Fawcett" />
-	<link href="/assets/site.css" rel="stylesheet">
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-	<script src="/assets/rainbow.js"></script>
-	<link href="/atom.xml" rel="alternate" type="application/atom+xml">
-	<script>
-	  //var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-ACCOUNTNUMBERHERE-TODO']); _gaq.push(['_trackPageview']);
-	  //(function() {
-		//var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		//ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		//var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  //})();
-	</script>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <meta name="description" content="Blog of software developer Richard Fawcett" />
+    <link href="/assets/site.css" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="/assets/rainbow.js"></script>
+    <link href="/atom.xml" rel="alternate" type="application/atom+xml">
+    <script>
+      //var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-ACCOUNTNUMBERHERE-TODO']); _gaq.push(['_trackPageview']);
+      //(function() {
+        //var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        //ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        //var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      //})();
+    </script>
 </head>
 <body>
     <div id="title"><a href="/" id="home">home</a><h1>{{ page.title  | xml_escape }}</h1><span> {{ page.date | date_to_string }}</div>
@@ -32,5 +32,21 @@
       //})();
     </script>
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=yeurch">comments powered by Disqus.</a></noscript>
+
+    <div id="license">
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/88x31.png" /></a><br />This <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" rel="dct:type">work</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.richardfawcett.net" property="cc:attributionName" rel="cc:attributionURL">Richard Fawcett</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US">Creative Commons Attribution-NonCommercial 3.0 Unported License</a>.
+
+        <div id="snippetlicense" style="display: none;">
+          <strong>Snippets of code</strong> on this page are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a> <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a> and may be used for commercial purposes with attribution. All such code is provided "AS IS", without express or implied warranty of any kind.
+        </div>
+      </div>
+      <script>
+        $(function(){
+            var snippets = $('pre > code');
+            if (snippets.length > 0)
+                $('#snippetlicense').show();
+        });
+      </script>
+    </div>
 </body>
 </html>

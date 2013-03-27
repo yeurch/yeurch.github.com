@@ -19,6 +19,8 @@ h3{margin-top:20px;}
 #title span{position:absolute;right:5%;bottom:18px;}
 #comments{margin-top:40px;}
 #home{position:absolute;left:25px;top:15px;background:#e3e3e3;border:1px solid #ddd;padding:4px;border-radius:4px;text-decoration:none;font-size:80%;}
+#license{font-size:0.7em;padding-bottom:10px}
+#snippetlicense{margin-top:10px}
 
 .clearfix:before,.clearfix:after {content: " ";display: table;}
 .clearfix:after {clear: both;}
