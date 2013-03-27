@@ -1,0 +1,27 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>RichardFawcett.net</title>
+ <link href="http://blog.richardfawcett.net/atom.xml" rel="self"/>
+ <link href="http://blog.richardfawcett.net/"/>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>http://blog.richardfawcett.net/</id>
+ <author>
+   <name>Richard Fawcett</name>
+   <email>richard@richardfawcett.net</email>
+ </author>
+
+ {% for post in site.posts limit:10 %}
+ <entry>
+   <title>{{ post.title | xml_escape }}</title>
+   <link href="http://blog.richardfawcett.net{{ post.url }}"/>
+   <updated>{{ post.date | date_to_xmlschema }}</updated>
+   <id>http://blog.richardfawcett.net{{ post.id }}</id>
+   <content type="html">{{ post.content | xml_escape }}</content>
+ </entry>
+ {% endfor %}
+ 
+</feed>

@@ -1,0 +1,21 @@
+---
+published: true
+---
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+<meta charset="utf-8">
+<title>RichardFawcett.net</title>
+<meta name="description" content="Blog of software developer Richard Fawcett">
+<link href="atom.xml" rel="alternate" type="application/atom+xml">
+<style>
+body{width:920px;margin:auto;font-family:verdana}a{color:#047}a:hover{color:#c51}
+p{float:right}ul{list-style:none;padding:0}a,li{padding:15px}
+</style>
+</head>
+<body>
+<p><a href=mailto:richard@richardfawcett.net>email</a><a href=atom.xml>rss</a></p>
+<h1>Welcome.</h1>
+<ul>{% for post in site.posts %}<li>{{ post.date | date_to_string }}<a href={{ post.url | replace_first: '/', ''}}>{{ post.title | escape}}</a>{% endfor %}</ul>
+</body>
+</html>
