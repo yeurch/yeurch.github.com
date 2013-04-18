@@ -36,7 +36,7 @@ h2{font-size: 1.2em;margin:0}
   <div id="tweets"></div>
   <div class="fr" style="font-size:0.9em;"><a href="http://twitter.com/yeurch" target="_blank" title="See all my tweets on Twitter">More &gt;</a></div>
 </div>
-<div class="fl" id="postlist">
+<div id="postlist">
 <ul>{% for post in site.posts %}<li>{{ post.date | date_to_string }}<a href={{ post.url | replace_first: '/', ''}}>{{ post.title | escape}}</a>{% endfor %}</ul>
 </div>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
