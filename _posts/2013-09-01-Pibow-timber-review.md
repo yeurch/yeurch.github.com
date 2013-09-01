@@ -16,7 +16,7 @@ So, I took the plunge and ordered a Pibow timber, a gorgeous looking case made o
 
 The Pimoroni site is quite well organised, and using their shopping cart was a breeze, but there was one glaring problem.  Nowhere on the site could I find details of shipping costs.  I elected to pay by PayPal (no offence Pimoroni, but I try to let as few people as possible have my credit card number!), so I was taken to the PayPal site to login.  At this point, the basket total did not mention shipping costs at all.  It was only after logging in with PayPal and returning to the Pimoroni site that £5 (around $7.75 USD at today’s exchange rate) was added to my order; a not insignificant amount to go on top of a £15 product.  It would have been a much better experience if shipping costs were more prominently displayed on the site.
 
-Following checkoug, communication about my order and delivery time were exemplary.  I ordered on a Sunday night, and the package arrived on Tuesday morning.  The packing was neat, with very little waste.  A simple cardboard sleeve (with instructions printed on the adhesive label) containing my case, and the fixings in a small plastic bag.  Perfect.
+Following checkout, communication about my order and delivery time were exemplary.  I ordered on a Sunday night, and the package arrived on Tuesday morning.  The packing was neat, with very little waste.  A simple cardboard sleeve (with instructions printed on the adhesive label) containing my case, and the fixings in a small plastic bag.  Perfect.
 
 ### Assembly
 
