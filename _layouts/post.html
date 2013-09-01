@@ -23,7 +23,7 @@
       <div id="disqus_thread"></div>
       <script type="text/javascript">
         var disqus_shortname = 'richardfawcett';
-        var disqus_title = '{{ page.title }}';
+        var disqus_title = "{{ page.title }}";
         var disqus_url = 'http://blog.richardfawcett.net{{ page.url }}';
         var disqus_identifier = {% if page.disqus_id %}{{ page.disqus_id }};{% else %}'{{ page.url }}';{% endif %}
 
@@ -51,7 +51,12 @@
             if (snippets.length > 0)
                 $('#snippetlicense').show();
 			
-			$('.slideshow').cycle({fx: 'none', pause: 1, timeout: 2000 });
+			var defaultSlideFx = 'none', defaultSlideTimeout = 2000;
+			$('.slideshow').cycle({
+				fx: $(this).data('fx') || defaultSlideFx,
+				pause: 1,
+				timeout: $(this).data('timeout') || defaultSlideTimeout
+			});
         });
       </script>
     </div>

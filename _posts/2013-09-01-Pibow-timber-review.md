@@ -23,7 +23,7 @@ I would say that construction was child’s play, and it pretty much was.  The p
 
 Assembly really is just a case of stacking the pieces on top of one another (remembering to insert your Raspberry Pi between layers two and three) and then pushing the supplied nylon bolts down through the holes in the four corners.  See images for pictures of assembly in progress.  The result is beautiful it has to be said.  I will now be quite happy to have my Pi sit next to my TV in full view.
 
-<div class='slideshow'>
+<div class='slideshow' data-timeout='1000'>
   <div><img src='/assets/img/20130901_pibow/1.JPG' width='400' height='400'/></div>
   <div><img src='/assets/img/20130901_pibow/2.JPG' width='400' height='400'/></div>
   <div><img src='/assets/img/20130901_pibow/3.JPG' width='400' height='400'/></div>
