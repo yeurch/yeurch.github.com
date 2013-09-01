@@ -7,15 +7,16 @@ _I got myself a [Raspberry Pi](http://www.raspberrypi.org/) last Spring, played 
 
 _I opted for the [Pibow Timber](http://shop.pimoroni.com/products/pibow-timber) from Pimoroni, a relatively local company just an hour and a half down the road. Here is my review._
 
-I first heard of Pimoroni when Raspberry Pi themselves posted a [link on Twitter]( https://twitter.com/Raspberry_Pi/status/357861227935965184) to the Pibow cases they'd developed. To me, this seemed like some kind of tacit approval of the product, as until then, I’d always worried about overheating or other problems which might arise from putting my Pi in a third party case.
+### Background
+I first heard of Pimoroni when Raspberry Pi themselves posted a [link on Twitter]( https://twitter.com/Raspberry_Pi/status/357861227935965184) to Pimoroni's Pibow cases. To me, this seemed like some kind of tacit approval of the product, as until then, I’d always worried about overheating or other problems which might arise from putting my Pi in a third party case.
 
-So, I took the plunge and ordered a PiBow timber, a gorgeous looking case made of spruce hardwood, together with a transparent top and base.
+So, I took the plunge and ordered a Pibow timber, a gorgeous looking case made of spruce hardwood, together with a transparent top and base.
 
 ### Ordering and Delivery
 
-The Pimoroni site is quite well organised, and using their shopping cart was a breeze, but there was one glaring problem.  Nowhere on the site could I find details of shipping costs.  I elected to pay by PayPal (no offence Pimoroni, but I try to let as few people have my credit card number as possible!), so I was taken to the PayPal site to login.  At this point, the basket total did not mention shipping costs at all.  It was only after logging in with PayPal and returning to the Pimoroni site that £5 (around $7.75 USD at today’s exchange rate) was added to my order; a not insignificant amount to go on top of a £15 product.  It would have been a much better experience if shipping costs were more prominently displayed on the site.
+The Pimoroni site is quite well organised, and using their shopping cart was a breeze, but there was one glaring problem.  Nowhere on the site could I find details of shipping costs.  I elected to pay by PayPal (no offence Pimoroni, but I try to let as few people as possible have my credit card number!), so I was taken to the PayPal site to login.  At this point, the basket total did not mention shipping costs at all.  It was only after logging in with PayPal and returning to the Pimoroni site that £5 (around $7.75 USD at today’s exchange rate) was added to my order; a not insignificant amount to go on top of a £15 product.  It would have been a much better experience if shipping costs were more prominently displayed on the site.
 
-Communication about my order, and delivery time were exemplary.  I ordered on a Sunday night, and the package arrived on Tuesday morning.  The packing was neat, with very little waste.  A simple cardboard sleeve (with instructions printed on the adhesive label) containing my case, and the fixings in a small plastic bag.  Perfect.
+Following checkoug, communication about my order and delivery time were exemplary.  I ordered on a Sunday night, and the package arrived on Tuesday morning.  The packing was neat, with very little waste.  A simple cardboard sleeve (with instructions printed on the adhesive label) containing my case, and the fixings in a small plastic bag.  Perfect.
 
 ### Assembly
 
